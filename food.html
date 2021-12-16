@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .timer {
+    
+        width: 250px;
+        height: 70px;
+        text-align: center;
+        border-radius: 20px;
+        padding: 10px 8px 10px 8px;
+        margin-top: 5px;
+        background-color: black;
+        color: white;
+        
+    }
+
+    .card {
+
+        display: flex;
+        background-color: white;
+        border-radius: 60px;
+        width: 250px;
+        box-shadow: 0px 5px 5px rgba(236, 236, 236, 0.2);
+        padding: 0px 40px 0px 10px;
+
+    }
+
+    .card__image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+
+    }
+
+    .card__details {
+        padding: 8px 12px 8px 12px;
+    }
+
+    .card__category {
+        color: gray;
+    }
+
+    .card__title {
+        font-weight: 600;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 12px;
+
+    }
+
+    .card__price {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .card__amount {
+        color: yellow;
+    }
+
+    .card__quantity {}
+
+    .card__minus {}
+
+    .card__number {}
+
+    .card__plus {}
+
+
+
+
+
+    .cardtwo {
+        display: flex;
+        background-color: white;
+        border-radius: 60px;
+        width: 250px;
+        box-shadow: 0px 5px 5px rgba(236, 236, 236, 0.2);
+        padding: 0px 40px 0px 10px;
+        height: 100px;
+
+    }
+
+    .card__imagetwo {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+
+
+    }
+
+
+    .card__detailstwo {
+        width: 100%;__categorytwo {
+        padding: 8px 12px 8px 12px;
+    }
+
+
+    .card
+        color: grey;
+
+    }
+
+
+    .card__titletwo {
+        color: black;
+        font-weight: 600;
+        font-size: 12px;
+        margin-top: 5px;
+
+    }
+
+
+    .card__titletwodown {
+        color: black;
+        font-weight: 600;
+        font-size: 12px;
+
+    }g
+
+    .card__amounttwo {
+        color: yellow;
+    }
+
+    .card__quantitytwo {
+
+    }
+
+    .card__pricetwo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .price__container {
+        width: 260px;
+        height: 30px;
+        background-color: white;
+        border-radius: 70px;
+        font-weight: 700;
+        padding: 10px 12px 10px 12px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 5px 5px rgba(236, 236, 236, 0.2);
+        overflow: hidden;
+        margin-top: 5px;
+
+    }
+
+
+    .total_container {
+
+    }
+
+    .amount_container {
+
+    }
+
+    .pay_container{
+        
+        width: 100px;
+        padding: 10px 5px 10px 5px;
+        border-radius: 60px;
+        background-color: black;
+        color: white;
+        margin-top: 10px;
+
+    }
+    
+    .last_container{
+        width: 260px ;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+
+
+<body>
+    <div>
+
+        <p class="timer"> The door will lock in <br><b>00:59</b></br></p>
+
+
+    </div>
+
+    <h3>You are buying</h3>
+
+
+    <div class="card">
+        <div class="card__image">
+            <img src="./pexels-karolina-grabowska-4198017.jpg" />
+        </div>
+
+        <div class="card__details">
+            <small class="card__category">Jagasalad</small>
+            <p class="card__title">salad with sprays and cheese</p>
+
+            <div class="card__price">
+                <p class="card__amount">
+                    $14.99
+                </p>
+                <div class="card__quantity">
+                    <span class="card__minus">-</span>
+                    <span class="card__number">1</span>
+                    <span class="card__plus">+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="cardtwo">
+        <div class="card__imagetwo">
+            <img src="./viktor-mogilat-i6tYTA_5nWk-unsplash (2).jpg" />
+        </div>
+
+        <div class=" card__detailstwo">
+            <small class="card__categorytwo">menu</small>
+            <p class="card__titletwo">pancakes with</p>
+            <p class="card__titletwodown">strawberries</p>
+
+
+            <div class="card__pricetwo">
+                <p class="card__amounttwo">
+                    $10.50
+                </p>
+                <div class="card__quantitytwo">
+                    <span class="card__minustwo">-</span>
+                    <span class="card__numbertwo">2</span>
+                    <span class="card__plustwo">+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="price__container">
+        <p class="total_container">
+            Total
+        </p>
+        <div class="amount _container">
+            $25.49
+            </p>
+        </div>
+
+    </div>
+
+    <div class="last_container">
+    <button class="pay_container">pay</button>
+    </div>
+</body>
+</body>
+
+</html>

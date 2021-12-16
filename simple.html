@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h4 {
+            text-decoration: underline;
+        }
+
+        .inputs {
+            color: red;
+            text-decoration: underline;
+        }
+        .position{
+            text-decoration: underline;
+            color: blue;
+            font-size: 20px;
+
+        }
+       .static{
+           position: static;
+           border: 3px solid green;
+           width: 50%;
+
+        }
+    </style>
+
+<body>
+    <h3>This page talks about forms and how they work.</h3>
+    <h4>types of elements include</h4>
+    <ol>
+        <li>Label</li>
+        <li>Input</li>
+        <li>Button</li>
+        <li>Select</li>
+        <li>text area</li>
+    </ol>
+    <form>
+        <label for="fname">firstname</label><br/>
+        <input type="text" id="fname" name="fname"><br/>
+        <label for="lname">Lastname</label><br/>
+        <input type="text" id="lname" name="lname"><br/>
+
+
+
+
+
+    </form>
+    
+    <p>Label and inputs work together</p>
+    <p class="inputs">Now lets talk about inputs</p>
+    <p>Types of inputs in includes</p>
+    <ol>
+        <li>Checkbox</li>
+        <li>Radio</li>
+        <li>Password</li>
+        <li>Text</li>
+        <li>Tel</li>
+        <li>Submit</li>
+    </ol>
+    <p>Example of checkbox</p>
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1">I have a bike</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+        <label for="vehicle2">I have a car</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle" value="boat">
+        <label for="vehicle3">I have a boat</label>
+    </form>
+    <p class="position">The position property</p>
+    <ol>
+        <li>static</li>
+        <li>Relative</li>
+        <li>Fixed</li>
+        <li>Absolute</li>
+        <li>Sticky</li>
+    </ol>
+    <b>Static:</b>the position:static; are postioned static by default example
+    <p class="static">
+        this div element has position:static;
+    </p>
+</body>
+</head>
+
+</html>

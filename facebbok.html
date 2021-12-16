@@ -1,0 +1,198 @@
+<doctype html>
+    <html>
+    <style>
+        .background {
+            border: 1px solid red;
+            width: 1500px;
+            height: 800px;
+            background-color: #f0f2f5;
+        }
+
+
+        .container {
+
+            width: 400px;
+            height: 300px;
+            background-color: white;
+            box-shadow: 0px 5px 5px rgba(236, 236, 236, 1.0);
+            overflow: hidden;
+            padding-left: 8px;
+
+        }
+
+        .email_container {
+            border: 1px solid #ddd;
+            width: 330px;
+            border-radius: 6px;
+            padding: 14px 16px;
+            color: grey;
+            margin-top: 10px;
+            font-size: 17px;
+            display: block;
+        }
+
+        .email_container:focus-visible {
+            border: 1px solid cornflowerblue;
+            outline: none;
+        }
+
+        .login_container {
+            width: 332px;
+            color: white;
+            background-color: blue;
+            padding: 0 16px;
+            border-radius: 6px;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 20px;
+            border: none;
+            line-height: 48px;
+
+
+        }
+
+        .forgot_container {
+            margin-top: 20px;
+            text-align: center;
+            color: cornflowerblue;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+
+
+        }
+
+        .create_new {
+            width: 150px;
+            border: 1px solid grey;
+            padding: 12px 7px 12px 7px;
+            margin-top: 10px;
+            text-align: center;
+            color: white;
+            background-color: green;
+            box-shadow: 0px 5px 5px rgba(236, 236, 236, 0.2);
+            border-radius: 5px;
+        }
+
+        .last_container {
+            width: 330px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .text_container {}
+
+        .forgot_container a {
+            text-decoration: none;
+        }
+
+        .forgot_container a:hover {
+            text-decoration: underline;
+
+        }
+
+        .top_container {
+            text-align: left;
+
+
+
+        }
+
+        .overall_container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+
+        }
+
+        .form_container {
+            background-color: white;
+            padding: 10px;
+
+        }
+
+        .logo img {
+            height: 106px;
+            margin: -28px;
+        }
+
+        .page_container {}
+
+        .newlast_container {
+            margin-left: 100px;
+        }
+
+        .only_footer {
+            color: grey;
+            font-size: smaller;
+            margin: left;
+        }
+
+        .list_container {
+            display: flex;
+            list-style: none;
+
+
+        }
+
+        .list_container li {
+            margin-left: 33px;
+
+        }
+    </style>
+
+    <body>
+
+
+        <div class="overall_container">
+            <div class="top_container">
+                <div class="logo">
+                    <img src="./logo.svg" />
+                </div>
+                <h2 class="text_container">Facebook helps you connect and share<br> with the people in your life</h2>
+            </div>
+            <div class="newlast_container">
+                <div class="form_container">
+                    <form>
+                        <input class="email_container" type="email" required
+                            placeholder="Email address or phone number">
+
+                        <input class="email_container" type="password" required placeholder="password">
+                        <button class="login_container">
+
+                        </button>
+                    </form>
+
+                    <div class="forgot_container">
+                        <a href="#">Forgotten password?</a>
+                    </div>
+
+                    <hr />
+
+                    <div class="last_container">
+                        <button class="create_new"> Create New Account</button>
+                    </div>
+                </div>
+
+                <div class="page_container">
+                    <p class="last_container"> <b> create a page </b>&nbsp;for a celebrity, band or business</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="only_footer">
+            <ul class="list_container">
+                <li>English(uk)</li>
+                <li>Hausa</li>
+                <li>Portugese(Brasil)</li>
+                <li>francaise(france)</li>
+                <li>Espanol Italiano</li>
+            </ul>
+        </footer>
+    </body>
+
+    </html>

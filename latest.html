@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    body {
+        background-color: #fafafa;
+    }
+
+    .main_container {
+        width: 350px;
+        border: 1px solid grey;
+        box-shadow: 0px 5px 5px rgba(236, 236, 236, 1.0);
+        height: 400px;
+        padding: 15px 20px 15px 20px;
+        background-color: white;
+    }
+
+    .header_container {
+        width: 300px;
+        font-family: cursive;
+        margin-bottom: 30px;
+        text-align: inherit;
+        text-align: center;
+    }
+
+    .email_container {
+        border: 1px solid grey;
+        width: 300px;
+        color: rgb(117, 111, 111);
+        padding: 15px;
+        border-radius: 6px;
+        font-size: 12px;
+        display: block;
+        margin-bottom: 10px;
+        background-color: #fafafa;
+        text-align: center;
+
+
+    }
+
+    .email_container:focus-visible {
+        border: 1px solid cornflowerblue;
+        outline: none;
+
+    }
+
+    .login_container {
+        width: 330px;
+        color: white;
+        background-color: cornflowerblue;
+        padding: 13px;
+        margin-top: 8px;
+        border-radius: 6px;
+        margin-top: 10px;
+        border: 0;
+    }
+
+    .h_container {
+        margin-bottom: 10px;
+    }
+
+    .loginwithfb_container {
+        color: cornflowerblue;
+        font-size: 15px;
+        font-weight: 600px;
+        flex-direction: column;
+        margin-left: 5px;
+    }
+
+    .forgot_container {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        color: cornflowerblue;
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 500px;
+        cursor: pointer;
+        text-decoration: underline;
+        margin-bottom: 20px;
+
+    }
+
+    .signup_container {
+        width: auto;
+        color: royalblue;
+        background-color: white;
+        padding: 13px;
+        margin-top: 15px;
+        border: 1px solid grey;
+
+    }
+
+    .getapp_container {
+        width: 300px;
+        color: black;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .or_container {
+        margin-top: 20px;
+        width: 330px;
+        color: blue;
+    }
+
+    .logo_container {
+        height: 20px;
+        width: 20px;
+        margin-top: 40px;
+    }
+
+    .facebooklogo_container {
+        width: 300px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+    }
+
+    .app_container {
+        width: 150px;
+        margin-right: 20px;
+
+    }
+
+    .gogglepay_container {
+        width: 150px;
+
+    }
+
+    .overallimage_container {
+        display: flex;
+        margin-left: 50px;
+        border: none;
+        margin-top: 30px;
+
+
+    }
+
+    .new_forgotcontainer {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+
+    .latestforgot_container {
+        text-decoration: none;
+    }
+
+    .gina {
+        text-decoration: none;
+    }
+
+    .phonephoto_container {
+        width: 500px;
+        height: 200px;
+    }
+
+    .final_container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .overallapp_container {
+        display: flex;
+        margin-top: 15px;
+
+    }
+
+    .list_container {
+        margin-top: 200px;
+        display: flex;
+        padding: 9px;
+        margin: 10px;
+    }
+</style>
+
+<body>
+
+    <div class="final_container">
+
+        <div class="phonephoto_container">
+            <img src="./instagramphone-removebg-preview.png" />
+        </div>
+        <div class="overall_container">
+
+            <div class="main_container ">
+                <h2 class="header_container">Instagram</h2>
+                <form>
+                    <div>
+                        <input class="email_container" type="email" required
+                            placeholder="Email address or phone number">
+                    </div>
+                    <div>
+                        <input class="email_container" type="password" required placeholder="password">
+                    </div>
+                    <button class="login_container">Log In</button>
+
+                </form>
+                <div class="or_container">
+                    <hr class="hr_container" data-content="OR">
+                </div>
+                <div class="facebooklogo_container">
+                    <div class="logo_container">
+                        <img src="./faceboooklogo (2).jpg" />
+                    </div>
+
+                    <p class="loginwithfb_container">Log in with Facebook</p>
+                </div>
+                <div class="new_forgotcontainer">
+                    <a href="#" class="gina">Forgot Password?</a>
+                </div>
+            </div>
+            <div class="signup_container">
+                <p class="link_container">Dont have an account?Sign up</p>
+                <a href="#"></a>
+            </div>
+            <p class="getapp_container">Get the app.</p>
+            <div class="overallapp_container">
+                <div class="app_container">
+                    <img src="./180ae7a0bcf7.png " />
+                </div>
+                <div class="gogglepay_container">
+                    <img src="./e9cd846dc748.png" />
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="only_footer">
+        <ul class="list_container">
+            <li>About</li>
+            <li>Blog</li>
+            <li>Jobs</li>
+            <li>Help</li>
+            <li>Api</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Top Account</li>
+            <li>Hashtags</li>
+            <li>Location</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

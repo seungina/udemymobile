@@ -1,0 +1,428 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 11px;
+}
+
+@media screen and (min-width: 425px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 134rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1rem;
+}
+
+.navwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 0.75rem 1rem;
+}
+
+.hamburger {
+  width: 1.13rem;
+}
+
+.searchcart {
+  display: flex;
+  align-items: center;
+}
+
+.searchicon {
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+
+.cart {
+  width: 1.13rem;
+}
+
+.mint img {
+  width: 100%;
+}
+.listing {
+  text-decoration: none;
+  color: #6a6f73;
+  background-color: transparent;
+  white-space: nowrap;
+  margin-right: 0.19rem;
+}
+
+.listing li {
+  position: relative;
+  cursor: pointer;
+}
+
+ul li {
+  margin-right: 0.63rem;
+}
+
+.listing li:hover {
+  color: black;
+  transition: width 0.4s ease;
+}
+
+.secondgrid-wrapper {
+  display: grid;
+  grid-column-gap: 1.26rem;
+  grid-template-columns: 1fr;
+  padding: 1.26rem 1.26rem;
+  border: 1px solid gray;
+  margin-top: 0.63rem;
+}
+
+.firstgrid-writeup {
+  margin-top: 0.31rem;
+}
+
+.star {
+  width: 0.63rem;
+}
+
+.imgwrapper {
+  border: 0.06rem solid gray;
+  width: 15rem;
+}
+
+.jose {
+  color: #6a6f73;
+  margin-top: 0.19rem;
+  font: 0.13rem;
+  margin-bottom: 0.38rem;
+}
+
+.numberone {
+  color: #b4690e;
+}
+
+.bracketone {
+  color: #6a6f73;
+  font: 0.31rem;
+}
+
+.lastyone {
+  margin-top: 0.44rem;
+  font-size: medium;
+}
+
+.udemyoverallwrapper {
+  border: 0;
+  padding: 0.31rem 0.63rem 0.63rem 0.31rem;
+  background-color: #f7f9fa;
+}
+
+.learnudemy-header {
+  text-align: center;
+  margin-top: 0.63rem;
+}
+
+.learn-udemy {
+  width: 18.75rem;
+  margin-top: 1.26rem;
+  padding: 0.31rem 0.31rem;
+}
+
+.playbutton {
+  margin: 0.63rem;
+}
+
+.playb {
+  width: 0.63rem;
+  border: 0.06rem solid black;
+  padding: 0.63rem 0.63rem;
+  border-radius: 50%;
+  background-color: #d1d7dc;
+  overflow: hidden;
+  margin-right: 0.63rem;
+}
+
+.playb-writeup {
+  width: 16.88rem;
+}
+
+.playflexwrapper {
+  display: flex;
+  margin-top: 1.26rem;
+}
+
+.starb {
+  width: 0.63rem;
+  border: 0.06rem solid black;
+  padding: 0.63rem 0.63rem;
+  border-radius: 50%;
+  background-color: #d1d7dc;
+  overflow: hidden;
+  margin-right: 0.63rem;
+}
+
+.starb-writeup {
+  width: 13.13rem;
+}
+
+.starflexwrapper {
+  display: flex;
+}
+
+.infiniteb {
+  width: 0.63rem;
+  border: 0.06rem solid black;
+  padding: 0.63rem 0.63rem;
+  border-radius: 50%;
+  background-color: #d1d7dc;
+  overflow: hidden;
+  margin-right: 0.63rem;
+}
+
+.infiniteb-writeup {
+  width: 11.88rem;
+}
+
+.infiniteflexwrapper {
+  display: flex;
+}
+
+.studentsview {
+  margin-top: 0.31rem;
+}
+
+.studentgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 0.63rem;
+  width: 100%;
+}
+
+.studentimg {
+  margin-top: 0.31rem;
+}
+
+.studhead {
+  width: 18.75rem;
+  margin-top: 0.31rem;
+}
+
+.top-category {
+  margin-top: 0.63rem;
+  margin-bottom: 1.26rem;
+}
+
+.links {
+  color: #1c1d1f;
+  background-color: transparent;
+  border: 0.06rem solid #1c1d1f;
+  text-decoration: none;
+  border-radius: 1.56rem;
+  padding: 0.31rem 0.31rem;
+  white-space: nowrap;
+  margin-right: 0.19rem;
+  text-align: center;
+}
+
+.overall {
+  margin-bottom: 0.63rem;
+}
+
+.linkbottons {
+  padding: 0.31rem 0.31rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.featured {
+  background-color: #f7f9fa;
+  width: 100%;
+  margin-top: 0.8rem;
+}
+
+.featured-topics {
+  margin-top: 0.31rem;
+  margin-bottom: 0.63rem;
+}
+
+.overall-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.63rem;
+}
+
+.devpara {
+  color: #6a6f73;
+  font: 0.06rem;
+  margin-bottom: 1.26rem;
+  margin-top: 0.31rem;
+}
+
+.devlink {
+  margin-top: 0.63rem;
+}
+
+.devgrid {
+  margin-top: 0.031rem;
+  margin-bottom: 0.63rem;
+}
+
+.linkwrapper {
+  padding: 0.63rem 1.26rem;
+  border: 1px solid black;
+  margin-bottom: 1.26rem;
+}
+
+.explorelink {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.yellowpix {
+  width: 100%;
+}
+
+.imagecontainer {
+  margin-top: 1.26rem;
+}
+
+.instructorpara {
+  font: 11.26rem;
+  width: 16rem;
+}
+
+.headinstruct {
+  text-align: center;
+  margin-top: 0.23rem;
+}
+.startteachingwrapper {
+  padding: 0.63rem 1.26rem;
+  border: 1px solid black;
+  margin-bottom: 1.86rem;
+  background-color: black;
+  margin-top: 1.26rem;
+  text-align: center;
+}
+
+.startlink {
+  text-decoration: none;
+  color: white;
+}
+.trustwrapper {
+  background-color: #f7f9fa;
+}
+.trustpara {
+  text-align: center;
+  padding-top: 2.32rem;
+}
+.overallimgwrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2.32rem;
+  padding-bottom: 2.32rem;
+  gap: 1rem;
+}
+.images {
+  display: flex;
+  justify-content: center;
+}
+.imagestwo {
+  display: flex;
+  justify-content: center;
+}
+.apple {
+  margin-right: 1.26rem;
+}
+.box {
+  margin-right: 1.26rem;
+}
+.vokswagen {
+  margin-right: 1.26rem;
+}
+.netflix {
+  margin-right: 1.2rem;
+}
+.mintwoman {
+  width: 100%;
+  margin-top: 1.26rem;
+}
+.headerpara {
+  font-size: 1rem;
+  margin-top: 0.6rem;
+}
+.headerphoto {
+  margin-top: 1rem;
+}
+.udemyheadererapper {
+  width: 18rem;
+  text-align: center;
+}
+.udemybizlink {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.udemybizwrapper {
+  padding: 0.63rem 1.26rem;
+  border: 1px solid black;
+  margin-bottom: 1.86rem;
+  background-color: black;
+  margin-top: 1.26rem;
+  text-align: center;
+}
+.stairs {
+  width: 100%;
+}
+.transform {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+.transformwrapper {
+  width: 18rem;
+}
+.transformpara {
+  font-size: 1.01rem;
+  text-align: center;
+  margin-top: 0.63rem;
+}
+.findoutlink {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.findoutwrapper {
+  padding: 0.63rem 1.26rem;
+  border: 1px solid black;
+  margin-bottom: 1.86rem;
+  background-color: black;
+  margin-top: 1.26rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.footerwrapper {
+  background-color: black;
+}
+.footerlist {
+  color: white;
+}

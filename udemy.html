@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 134rem;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+
+    .navwrapper {
+        display: flex;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+        position: sticky;
+        top: 0;
+        background-color: #ffffff;
+        height: 80px;
+        padding: 8px 0;
+    }
+
+    .cat {
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+
+    img.searchicon {
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    .formwrapper input {
+        border: none;
+        background-color: transparent;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .formwrapper input:focus {
+        outline: none;
+    }
+
+    .formcontainer {
+        display: flex;
+        align-items: center;
+        border-radius: 40px;
+        padding: 13px;
+        margin-right: 20px;
+        border: 1px solid;
+        overflow: hidden;
+        background-color: #e2e2e2;
+        flex-grow: 1;
+    }
+
+    .udemibizwrapper {
+        margin-right: 25px;
+    }
+
+    .cartwrapper img {
+        height: 30px;
+        margin-left: 15px;
+    }
+
+    .login {
+        font: 50px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .loginwrapper:hover {
+        background-color: #e2e2e2;
+    }
+
+    .loginwrapper {
+        border: 1px solid black;
+        padding: 10px 10px;
+        margin-left: 15px;
+
+    }
+
+    .signup {
+        color: white;
+        text-decoration: none;
+    }
+
+    .signwrapper {
+        background-color: black;
+        border: 1px solid black;
+        padding: 10px 10px;
+        margin-left: 10px;
+    }
+
+    .globe {
+        margin-left: 10px;
+        padding: 10px 10px;
+    }
+
+    .global img {
+        color: white;
+        height: 30px;
+        background-color: white;
+
+    }
+
+    .global img:hover {
+        background-color: #e2e2e2;
+    }
+
+    .mint img {
+        width: 100%;
+    }
+
+    .overallheader {
+        margin: 60px 0;
+
+    }
+
+    .firstheading {
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 1.25;
+        letter-spacing: -.05rem;
+    }
+
+    .secondheading {
+        font-weight: 400;
+        line-height: 1.4;
+        font-size: 25px;
+    }
+
+    .listing {
+        list-style-type: none;
+        display: flex;
+        font: 60px;
+        color: #6a6f73;
+        margin-top: 20px;
+    }
+
+    .listing li {
+        position: relative;
+        cursor: pointer;
+    }
+
+    ul li {
+        margin-right: 55px;
+    }
+
+    .listing li:hover {
+        color: black;
+        transition: width 0.4s ease;
+    }
+
+    .overallfirst-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid #e2e2e2;
+        width: 1400px;
+        padding: 10px 20px 30px 10px;
+
+    }
+
+    .first-grid {
+        width: 700px;
+        padding: 20px 25px;
+
+    }
+
+    .explore-wrapper {
+        margin-top: 5px;
+    }
+
+    .firstgrid-header {
+        margin-top: 10px;
+    }
+
+    .grid-para {
+        margin-top: 10px;
+        font: 50px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    .explorelink {
+        border: 1px solid black;
+        color: black;
+        padding: 13px 15px;
+        font: 30px;
+        background-color: white;
+        text-decoration: none;
+
+    }
+
+    .explorelinkwrapper {
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+
+    .explorelink:hover {
+        background-color: #e2e2e2;
+
+    }
+
+    .secondgrid-wrapper {
+        display: grid;
+        width: 100%;
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 10px 10px;
+    }
+
+    .firstimage {
+        border: 1px solid #d1d7dc;
+
+    }
+
+    .star {
+        width: 10px;
+    }
+
+    .jose {
+        color: #6a6f73;
+        margin-top: 3px;
+        font: 2px;
+        margin-bottom: 6px;
+    }
+
+    .numberone {
+        color: #b4690e;
+
+    }
+
+    .bracketone {
+        color: #6a6f73;
+        font: 5px;
+    }
+
+    .lastyone {
+        margin-top: 7px;
+        font-size: medium;
+    }
+
+    .kiri {
+        margin-top: 3px;
+        color: #6a6f73;
+        font: 2px;
+        margin-bottom: 6px;
+    }
+
+    .numbertwo {
+        color: #b4690e;
+    }
+
+    .brackettwo {
+        color: #6a6f73;
+        font: 5px;
+    }
+
+    .lastytwo {
+        margin-top: 7px;
+        font-size: medium;
+    }
+
+    .bracketthree {
+        color: #6a6f73;
+        font: 5px;
+
+    }
+
+    .lastythree {
+        margin-top: 7px;
+        font-size: medium;
+    }
+
+    .overallplaywrapper {
+        background-color: #f7f9fa;
+        margin-top: 80px;
+        padding: 30px 30px;
+
+
+    }
+
+    .buttonimage {
+        width: 10px;
+        border: 1px solid black;
+        padding: 10px 10px;
+        border-radius: 50%;
+        background-color: #d1d7dc;
+        overflow: hidden;
+        margin-right: 10px;
+
+    }
+
+
+    .playbutton {
+        width: 280px;
+        display: flex;
+        margin-right: 10px;
+
+    }
+
+    .buttonwrapper {
+        display: flex;
+    }
+
+    .starbuttonwrapper {
+        display: flex
+    }
+
+
+    .infinitybotton {
+        width: 5px;
+    }
+
+    .infinitybuttonwrapper {
+        display: flex;
+
+    }
+
+    .overallplaywrapper {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    @media screen and(max-width: 800px) {
+        .navwrapper {
+            position: fixed;
+
+        }
+
+    }
+</style>
+<html>
+
+<body>
+    <header class="container">
+        <div class="navwrapper">
+            <h1 class="udemywrapper">Udemy</h1>
+            <h3 class="cat"> categories</h3>
+            <div class="formcontainer">
+                <label for="searchinput">
+                    <img class="searchicon" src="./searchicon.png" />
+                </label>
+                <div class="formwrapper">
+                    <input id="searchinput" type="text" placeholder="search for anything" />
+                </div>
+            </div>
+            <div class="udemibizwrapper">
+                <p class="udemibiz">Udemy business</p>
+            </div>
+            <div class="teachwrapper">
+                <p class="teach">Teach on Udemy</p>
+            </div>
+            <div class="cartwrapper">
+                <img src="./cart.png">
+            </div>
+            <div class="loginwrapper">
+                <a class="login" href="#">Log In</a>
+            </div>
+            <div class="signwrapper">
+                <a class="signup" href="#">Sign Up</a>
+            </div>
+            <div class="globe">
+                <button class="global">
+                    <img src="./globenew.png" />
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="mint">
+        <img src="./mint.jpg" />
+    </div>
+    <div class="overallheader container">
+        <h1 class="firstheading">A broad selection of courses</h1>
+        <h3 class="secondheading">Choose from 183,000 online video courses with new additions published every month
+        </h3>
+        <ul class="listing">
+            <li>Python</li>
+            <li>Excel</li>
+            <li>Web Development</li>
+            <li>JavaScript</li>
+            <li>Data Science</li>
+            <li>AWS Certification</li>
+            <li>Drawing</li>
+        </ul>
+    </div>
+    <div class="overallfirst-grid container">
+        <div class="first-grid">
+            <div class="explore-wrapper">
+                <h2 class="firstgrid-header">Expand Your career Opportunities With Python</h2>
+                <p class="grid-para">Whether you work in machine learning or finance,or
+                    are pursuing a career in web development or data science,Python is
+                    one of the most important skill you can learn. Pythons simple syntax
+                    is expecially suited for desktop,webdesign and application.Pythons design
+                    philosophy emphasizes readability and usability.
+                </p>
+                <div class="explorelinkwrapper">
+                    <a class="explorelink" href="#">Explore Python</a>
+                </div>
+            </div>
+
+            <div class="second-grid">
+                <div class="secondgrid-wrapper">
+                    <div class="firstexplore-grid">
+                        <div class="firstexplorewrapper">
+                            <div class="imgwrapper">
+                                <img class="firstimage" src="./gridonelappy.jpg" />
+                            </div>
+                            <h4 class="firstgrid-writeup">2022 Complete Python Bootcamp From Zero to Hero in Python
+                            </h4>
+                            <p class="jose"> Jose Portilla </p>
+                            <div class="stars">
+                                <span class="numberone">4.6</span>
+                                <img class="star" src="./star.png" />
+                                <img class="star" src="./star.png" />
+                                <img class="star" src="./star.png" />
+                                <img class="star" src="./star.png" />
+                                <img class="star" src="./star.png" />
+                                <span class="bracketone">(390,490)</span>
+                                <div class="lastyone">$9.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="secondexplore-grid">
+                        <img class="firstimage" src="./gridtwostarface.jpg" />
+                        <h4>Machine Learning A-Z™: Hands-On Python & R In Data</h4>
+                        <p class="kiri">Kirill Eremenko, Hadelin</p>
+                        <div class="stars">
+                            <span class="numbertwo">4.6</span>
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <span class="brackettwo">(152,781)</span>
+                            <div class="lastytwo">$9.99</div>
+
+                        </div>
+                    </div>
+                    <div class="thirdexplore-grid">
+                        <img class="firstimage" src="./gridthreelapy.jpg" />
+                        <h4>Python for Data Science and Machine Learning Bootcamp</h4>
+                        <p class="jose">Jose Portilla </p>
+                        <div class="stars">
+                            <span class="numbertwo">4.7</span>
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <span class="bracketthree">(107,036)</span>
+                            <div class="lastythree">$12.99</div>
+                        </div>
+                    </div>
+                    <div class="fourthexplore-grid">
+                        <img class="firstimage" src="./gridfourteacup.jpg" />
+                        <h4>Learn python Programming Master Class</h4>
+                        <p class="jose">Tim Buchalka,Jean Paul-Roberts</p>
+                        <div class="stars">
+                            <span class="numbertwo">4.6</span>
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <span class="bracketthree">(83,461)</span>
+                            <div class="lastythree">$9.99</div>
+
+                        </div>
+                    </div>
+                    <div class="fifthexplore-grid">
+                        <img class="firstimage" src="./gridgirlfv.jpg" />
+                        <h4>100 Days of Code: The Complete Python Pro</h4>
+                        <p class="jose">Dr. Angela Yu</p>
+                        <div class="stars">
+                            <span class="numbertwo">4.7</span>
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <img class="star" src="./star.png" />
+                            <span class="bracketthree">(64,078)</span>
+                            <div class="lastythree">$9.99</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overallplaywrapper">
+        <div class="playbuttonwrapper">
+            <div class="playbutton">
+                <img class="buttonimage" src="./playbutton.png" />
+                <h3 class="playbwriteup">Learn in-demand skills with over 183,000 video courses</h3>
+            </div>
+        </div>
+        <div class="starbutton">
+            <div class="starbuttonwrapper">
+                <img class="buttonimage" src="./blackstar.png" />
+                <h3 class="starwriteup">Choose courses taught by real-world experts</h3>
+            </div>
+        </div>
+        <div class="infinitybutton">
+            <div class="infinitybuttonwrapper">
+                <img class="buttonimage" src="./infinity.png" />
+                <h3 class="infinitywriteup">Learn at your own pace, with lifetime access on mobile and desktop</h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
